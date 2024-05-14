@@ -1,0 +1,100 @@
+{
+  "agendamentoID": 0,
+  "dataHora": "2024-01-10T10:00:00.590Z",
+  "observacoes": "Cabelo",
+  "status": 1,
+  "clienteId": 3,
+  "cliente": {
+    "clienteId": 3,
+    "nome": "Julia",
+    "telefone": "88-8888-8888",
+    "email": "Julia@example.com",
+    "dataNascimento": "2024-01-06T11:24:58.988"
+  },
+  "servicos": [
+    {
+    "id": 1,
+    "nomeServico": "Corte Alterado",
+    "descricao": "Corte Alterado",
+    "duracaoMin": 22,
+    "preco": 22
+    },
+      {
+    "id": 1002,
+    "nomeServico": "Luzes",
+    "descricao": "Luzes",
+    "duracaoMin": 200,
+    "preco": 200
+    }
+  ]
+}
+
+
+
+
+
+ {
+    "agendamentoID": 1,
+    "dataHora": "2024-01-10T10:00:00.59",
+    "observacoes": "Completo",
+    "status": 0,
+    "clienteId": 1,
+    "cliente": {
+    "clienteId": 1,
+    "nome": "João Silva",
+    "telefone": "99-9999-8888",
+    "email": "joao@email.com",
+    "dataNascimento": "2000-01-06T00:00:00"
+    },
+    "servicos": [
+      {
+        "id": 1,
+        "nomeServico": "Corte Alterado",
+        "descricao": "Corte Alterado",
+        "duracaoMin": 22,
+        "preco": 22
+      },
+   {
+    "id": 1003,
+    "nomeServico": "Bigode",
+    "descricao": "Bigode",
+    "duracaoMin": 50,
+    "preco": 50
+  },
+  {
+    "id": 1004,
+    "nomeServico": "barba",
+    "descricao": "barba",
+    "duracaoMin": 50,
+    "preco": 50
+  }
+    ]
+  }
+
+
+
+  Autenticação e Autorização com Token JWT
+
+
+  1 - no Program iremos incluir o serviço do Identity padrão 
+  2 - no ApplicationDbContext iremos determinar que o contexto irá herdar do IdentityDbContext
+  3 - no program incluir os Middlewares Authentication e Autorização
+  4 - Migrations
+  4 - Incluir pacote Microsoft.AspNetCore.Authentication.JwtBearer
+  5 - no appSettings.json iremos incluir uma chave para o JWT
+  6 - no appSettings.json iremos incluir o Token configuration 
+        Audience => Aplicações que podem usar o Token 
+        Issuer => Quem emite o token 
+        Expires => tempo de expiração
+  7 - Criar Classe UsuarioDTO
+  8 - Criar Usuário Token
+  9 - Criaremos o AutorizaController  
+  10 - Register
+  11 - Login
+  12 - GeraToken
+
+{
+  "email": "teste1@teste.com",
+  "password": "t3ste1@Br@sil",
+  "confirmPassword": "t3ste1@Br@sil"
+}
